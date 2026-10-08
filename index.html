@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Git – TODO App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>My TODO List</h1>
+      <p class="subtitle">A tiny app for practicing Git</p>
+    </header>
+
+    <!-- Form for adding a new task -->
+    <form id="todo-form" class="todo-form" autocomplete="off">
+      <input
+        id="todo-input"
+        type="text"
+        placeholder="What needs to be done?"
+        aria-label="New task"
+        maxlength="120"
+      >
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- Task list (filled by app.js) -->
+    <ul id="todo-list" class="todo-list"></ul>
+
+    <!-- Footer with counter and actions -->
+    <footer class="app-footer">
+      <span id="todo-count">0 tasks left</span>
+      <button id="clear-completed" type="button" class="link-button">
+        Clear completed
+      </button>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
